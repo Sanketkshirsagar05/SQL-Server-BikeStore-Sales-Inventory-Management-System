@@ -6,7 +6,7 @@ It is designed to handle **sales, customers, staff, products, inventory, and ord
 
 ---
 
-## 🏗️ Database Schema  
+##  Database Schema  
 The database is divided into **two schemas** for better organization:  
 
 - **Production Schema**  
@@ -46,7 +46,7 @@ The database is divided into **two schemas** for better organization:
 
 ---
 
-## 🚀 How to Run  
+##  How to Run  
 
 1. Install **SQL Server** (2019 or later recommended).  
 2. Open **SQL Server Management Studio (SSMS)**.  
