@@ -12,4 +12,45 @@ The database supports:
 
 ---
 
+## 🏗️ Database Schema  
+The database is divided into **two schemas**:  
 
+- **Production Schema**  
+  - Categories  
+  - Brands  
+  - Products  
+  - Stocks  
+
+- **Sales Schema**  
+  - Customers  
+  - Stores  
+  - Staffs  
+  - Orders  
+  - Order Items  
+
+---
+
+## ⚙️ Features Implemented  
+
+1. **Schema & Table Creation**  
+   - Normalized structure with primary/foreign keys  
+   - Cascading updates & deletes for referential integrity  
+
+2. **Sample Data Insertion**  
+   - Brands, categories, products, customers, orders, order items, and stock  
+
+3. **Views**  
+   - `vw_active_orders` → Displays active orders with customer & staff details  
+
+4. **Stored Procedures**  
+   - `usp_sales_by_year` → Returns total sales revenue for a given year  
+
+5. **Business Queries**  
+   - Top-selling products  
+   - Revenue by store  
+   - Customer purchase history  
+   - Inventory status  
+
+
+```sql
+SELECT * FROM sales.vw_active_orders;
