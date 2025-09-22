@@ -1,19 +1,13 @@
 # SQL Server BikeStore Sales & Inventory Management System  
 
 ## 📌 Project Overview  
-This project is a **SQL Server-based database system** designed to manage and analyze sales, customers, products, staff, and inventory for a retail company (BikeStore).  
-It includes **schemas, tables, relationships, queries, views, and stored procedures** to simulate a real-world company database environment.  
-
-The database supports:  
-- Managing customers, staff, stores, products, brands, and categories  
-- Handling sales orders and order items  
-- Tracking stock levels across stores  
-- Performing sales analysis through views and stored procedures  
+This project is a **SQL Server-based database system** that simulates a real-world retail company (BikeStore).  
+It is designed to handle **sales, customers, staff, products, inventory, and order management** while also supporting **business insights** through views and stored procedures.  
 
 ---
 
 ## 🏗️ Database Schema  
-The database is divided into **two schemas**:  
+The database is divided into **two schemas** for better organization:  
 
 - **Production Schema**  
   - Categories  
@@ -32,25 +26,33 @@ The database is divided into **two schemas**:
 
 ## ⚙️ Features Implemented  
 
-1. **Schema & Table Creation**  
-   - Normalized structure with primary/foreign keys  
-   - Cascading updates & deletes for referential integrity  
+- **Schema & Table Creation**  
+  - Designed normalized tables with relationships using primary and foreign keys  
+  - Implemented cascading updates & deletes for referential integrity  
 
-2. **Sample Data Insertion**  
-   - Brands, categories, products, customers, orders, order items, and stock  
+- **Sample Data Insertion**  
+  - Added customers, staff, stores, products, brands, categories, orders, and inventory  
 
-3. **Views**  
-   - `vw_active_orders` → Displays active orders with customer & staff details  
+- **Views**  
+  - Created reusable views such as `vw_active_orders` to simplify business reporting  
 
-4. **Stored Procedures**  
-   - `usp_sales_by_year` → Returns total sales revenue for a given year  
+- **Stored Procedures**  
+  - Developed procedures such as `usp_sales_by_year` to calculate sales revenue by year  
 
-5. **Business Queries**  
-   - Top-selling products  
-   - Revenue by store  
-   - Customer purchase history  
-   - Inventory status  
+- **Business Insights**  
+  - Revenue by year, store, and product  
+  - Customer purchase history  
+  - Inventory and stock tracking  
 
+---
 
-```sql
-SELECT * FROM sales.vw_active_orders;
+## 🚀 How to Run  
+
+1. Install **SQL Server** (2019 or later recommended).  
+2. Open **SQL Server Management Studio (SSMS)**.  
+3. Create a new database (e.g., `BikeStoreDB`).  
+4. Run the provided schema creation script.  
+5. Insert sample data using the data script.  
+6. Explore views, stored procedures, and queries for analysis.  
+
+---
